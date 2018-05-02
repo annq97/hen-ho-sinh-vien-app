@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.santteam.apphenhosinhvien">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+    android:name=".HenHoSinhVien"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Hẹn Hò Sinh Viên"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/statusColor">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_application_id"/>
+
+        <activity
+            android:name=".DangNhapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ManHinhChaoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/statusColorOfChao" />
+        <activity
+            android:name=".DangKyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrangCaNhanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TimKiemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DoiMatKhauActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThietLapCaNhan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LocActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".model.ImageFullSCActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".QuenMatKhauActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NaviHeaderActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".CheckThongTinDangNhapActivity"></activity>
+        <activity
+            android:name=".InformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TinhNangActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

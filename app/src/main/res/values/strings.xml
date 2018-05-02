@@ -1,0 +1,21 @@
+<resources>
+    <string name="facebook_application_id">417935688608722</string>
+
+    <string name="ten_app">Hẹn Hò Sinh Viên</string>
+    <string name="app_name">HenHoSinhVien</string>
+    <string name="pass_word">Password</string>
+    <string name="uer_nam">Username</string>
+    <string name="dang_nhap">ĐĂNG NHẬP</string>
+    <string name="quen_mat_khau"><u>Quên mật khẩu</u></string>
+    <string name="dang_ki"><u>Đăng kí</u></string>
+    <string name="dang_nhap_voi">ĐĂNG NHẬP VỚI</string>
+    <string name="email">Email</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="luu_y_edittext_khac">\"Những sở thích khác nhau cách nhau bằng dấu: \' phẩy\' \"</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+</resources>

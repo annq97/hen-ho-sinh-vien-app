@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:emojicon="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rvChatKhach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAnhDaiDienKhach"
+            android:layout_width="@dimen/width.height.imganhdaidien.custom.single"
+            android:layout_height="@dimen/width.height.imganhdaidien.custom.single"
+            android:layout_margin="@dimen/margin.imganhkhach"
+            android:src="@drawable/img_add_default" />
+
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+            android:id="@+id/tvMessageSingleKhach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgAnhDaiDienKhach"
+            android:layout_marginLeft="@dimen/marginleft.tvmessge.custom.single"
+            android:layout_marginRight="@dimen/marginright.tvmessge.custom.single"
+            android:layout_toEndOf="@+id/imgAnhDaiDienKhach"
+            android:background="@drawable/message_text_background_khach"
+            android:padding="@dimen/padding.tv.messge.custom.single"
+            android:text="TextView"
+            emojicon:emojiconSize="50sp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize.tvmessge.custom.single" />
+
+        <ImageView
+            android:id="@+id/message_image_chat_khach"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height.img.custom.single"
+            android:layout_marginBottom="@dimen/marginbottom.img.custom.single"
+            android:layout_marginLeft="@dimen/marginleft.img.custom.single"
+            android:layout_marginRight="@dimen/marginright.img.custom.single"
+            android:layout_marginTop="@dimen/margintop.img.custom.single"
+            app:srcCompat="@drawable/img_add_default" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rvChatMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+            android:id="@+id/tvMessageSingleMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/marginbottom.tvmess.custom.sinle"
+            android:layout_marginLeft="@dimen/marginleft.tvmess.custom.single"
+            android:layout_marginRight="@dimen/marginright.tvmess.cuctom.single"
+            android:layout_marginTop="@dimen/margintop.tvmess.sustom.single"
+            android:background="@drawable/message_text_background_me"
+            android:padding="@dimen/padding.tvmess.custom.single"
+            android:text="TextView"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize.tvmessge.custom.single"
+            emojicon:emojiconSize="50sp"
+            />
+
+        <ImageView
+            android:id="@+id/message_image_chat_me"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height.imgme.custom.single"
+            android:layout_marginBottom="@dimen/marginbottom.imgme.custom.single"
+            android:layout_marginLeft="@dimen/marginleft.imgme.custom.single"
+            android:layout_marginRight="@dimen/marginright.imgme.custom.single"
+            android:layout_marginTop="@dimen/margintop.imgme.custom.single"
+            app:srcCompat="@drawable/img_add_default" />
+
+    </RelativeLayout>
+
+</LinearLayout>

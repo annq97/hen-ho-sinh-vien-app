@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1be25d">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:src="@drawable/img_anhchao"
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:gravity="center"
+        android:textSize="40dp"
+        android:text="@string/ten_app"
+        android:id="@+id/ll4"
+        android:layout_above="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:paddingTop="@dimen/marginTop"
+        android:paddingLeft="@dimen/marginTop"
+        android:paddingRight="@dimen/marginTop"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/btnDangNhapFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_nor_dangnhap"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"/>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btnDangNhapGoogle"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_nor_dangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.gms.common.SignInButton>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_above="@+id/ll1"
+        android:padding="@dimen/marginTop"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:textSize="@dimen/text_nor_dangnhap"
+            android:id="@+id/edtTenDangNhap"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn.dangnhap"
+            android:background="@drawable/botron"
+            android:drawableLeft="@drawable/ic_uerdangnhap"
+            android:drawablePadding="10dp"
+            android:gravity="left|center"
+            android:hint="@string/email"
+            android:inputType="textPersonName"
+            android:padding="10dp" />
+
+        <EditText
+            android:textSize="@dimen/text_nor_dangnhap"
+            android:id="@+id/edtMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn.dangnhap"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/botron"
+            android:drawableLeft="@drawable/ic_pass"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/pass_word"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <Button
+            android:textSize="@dimen/text_nor_dangnhap"
+            android:id="@+id/btnDangNhap"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn.dangnhap"
+            android:background="@drawable/botron"
+            android:hint="@string/dang_nhap" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:textSize="@dimen/text_nor_dangnhap"
+            android:id="@+id/tvQuenMatKhau"
+            android:gravity="center"
+            android:text="@string/quen_mat_khau"
+            android:layout_marginTop="@dimen/marginTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hight" />
+
+        <TextView
+            android:textSize="@dimen/text_nor_dangnhap"
+            android:id="@+id/tvDangKy"
+            android:gravity="center"
+            android:text="@string/dang_ki"
+            android:layout_marginBottom="@dimen/marginBottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hight" />
+    </LinearLayout>
+
+</RelativeLayout>

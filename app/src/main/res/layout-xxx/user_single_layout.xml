@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_margin="@dimen/margin.imganhdaidien.user_single"
+        android:id="@+id/imgAnhDaiDien"
+        android:layout_width="@dimen/w_height.img.user.single"
+        android:layout_height="@dimen/w_height.img.user.single"
+        android:src="@drawable/img_add_default" />
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/imgLike"
+        android:layout_width="@dimen/width.img.user_single"
+        android:layout_height="@dimen/width.img.user_single"
+        android:layout_alignBottom="@+id/imgAnhDaiDien"
+        android:layout_alignEnd="@+id/imgAnhDaiDien"
+        app:srcCompat="@drawable/ic_like" />
+    <TextView
+        android:layout_marginTop="@dimen/margintop.tv.user.single"
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imgAnhDaiDien"
+        android:text="Display Name"
+        android:textSize="@dimen/textsize.tv.user.single"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="@dimen/margintop.tvdate.user.single"
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvUsername"
+        android:layout_below="@+id/tvUsername"
+        android:text="01/01/2017" />
+
+    <ImageView
+        android:id="@+id/imgUserOnline"
+        android:layout_width="@dimen/w_height.imgonline.user.single"
+        android:layout_height="@dimen/w_height.imgonline.user.single"
+        android:layout_alignTop="@+id/tvUsername"
+        android:layout_marginStart="@dimen/marginstart.imgonline.user.single"
+        android:layout_marginTop="@dimen/margintop.imgonline.user.single"
+        android:layout_toEndOf="@+id/tvUsername"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_online" />
+
+</RelativeLayout>

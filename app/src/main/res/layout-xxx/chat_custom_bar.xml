@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgAnhDaiDien"
+        android:layout_width="@dimen/width.imganhdadien"
+        android:layout_height="@dimen/width.imganhdadien"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/marginright.img.chat.custom.bar"
+        android:layout_marginTop="@dimen/marginright.img.chat.custom.bar"
+        android:src="@drawable/img_add_default" />
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/imgLike"
+        android:layout_width="@dimen/width.imglike.chat_custom_bar"
+        android:layout_height="@dimen/width.imglike.chat_custom_bar"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/margintop.imglike.chat_custombar"
+        android:layout_marginEnd="@dimen/marginend.imglike.chatcustombar"
+        android:layout_toStartOf="@+id/imgAnhDaiDien"
+        app:srcCompat="@drawable/ic_like" />
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Display Name"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textsize.tvuerame.chat.custom.chatcustomcar"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tvLastSeen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvUsername"
+        android:text="Last Seen"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>

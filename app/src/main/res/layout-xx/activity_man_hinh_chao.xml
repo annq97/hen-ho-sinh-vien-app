@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ff9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <ImageView
+
+        android:src="@drawable/img_anhchao"
+        android:layout_width="@dimen/width.anh.manhinhchao"
+        android:layout_height="@dimen/height.imganhchao.manhinhchao"
+        android:id="@+id/imageView12"
+        android:layout_marginTop="@dimen/margintop.imganhchao.manhinhchao"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+    <TextView
+        android:textColor="#00ff51"
+        android:textStyle="bold"
+        android:textSize="@dimen/textsize.tv.manhinhchao"
+        android:text="Hẹn Hò Sinh Viên "
+        android:gravity="center"
+        android:layout_width="@dimen/width.tv.manhinhchao"
+        android:layout_height="@dimen/height.tv.manhinhchao"
+        android:layout_below="@+id/imageView12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margintop.tv.manhinhchao"
+        android:id="@+id/textView2" />
+</RelativeLayout>

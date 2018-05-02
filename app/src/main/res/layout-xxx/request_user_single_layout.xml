@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgAnhDaiDien"
+        android:layout_width="@dimen/w_height.img.reqest.uer"
+        android:layout_height="@dimen/w_height.img.reqest.uer"
+        android:layout_margin="@dimen/margin.img.request.uer"
+        android:src="@drawable/img_add_default" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgAnhDaiDien"
+        android:layout_toEndOf="@+id/imgAnhDaiDien"
+        android:text="Display Name"
+        android:textSize="@dimen/textsize.tvuername.request"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDongY"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height.btn.request.uer"
+        android:layout_alignLeft="@+id/tvUsername"
+        android:layout_below="@+id/tvUsername"
+        android:layout_marginTop="@dimen/margintop.btn.request.uer"
+        android:background="@color/colorGreen"
+        android:text="Đồng ý"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textsize.btn.request.uer"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnTuChoi"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height.btn.request.uer"
+        android:layout_below="@id/tvUsername"
+        android:layout_marginLeft="@dimen/marginleft.btn.request.uer"
+        android:layout_marginTop="@dimen/margintop.btn.request.uer"
+        android:layout_toEndOf="@+id/btnDongY"
+        android:background="@color/colorOrange"
+        android:text="Từ chối"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textsize.btn.request.uer"
+        android:textStyle="bold" />
+
+</RelativeLayout>

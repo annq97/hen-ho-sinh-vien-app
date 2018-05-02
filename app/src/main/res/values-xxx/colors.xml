@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="dang.nhap">#3F51B5</color>
+    <color name="dang.nhap2">#ebef3d38</color>
+    <color name="colorBackground">#F2F2F2</color>
+    <color name="coloMain">#1BE25D</color>
+    <color name="mauBackgroundMenuTren">#1BE25D</color>
+    <color name="mauTextMenuTren">#ffffff</color>
+    <color name="mauMenuTimKiem">#1bb179</color>
+    <color name="green">#1BE25D</color>
+    <color name="white">#ffff</color>
+    <color name="black">#000</color>
+    <color name="xam">#ece9e9</color>
+    <color name="mau_chu">#383737</color>
+    <color name="mau_StatusBar">#1BE25D</color>
+    <color name="Mau_StatusBarChao">#ff9</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGreen">#34bf2a</color>
+    <color name="colorOrange">#f23206</color>
+</resources>

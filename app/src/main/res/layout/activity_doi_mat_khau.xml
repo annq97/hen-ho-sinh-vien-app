@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DoiMatKhauActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarDoiMatKhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/coloMain"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        ></android.support.v7.widget.Toolbar>
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height.sapce.doimatkhau" />
+
+    <EditText
+        android:id="@+id/edtMatKhauCu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginright.edtMKcu.doimatkhau"
+        android:layout_marginRight="@dimen/marginright.edtMKcu.doimatkhau"
+        android:gravity="left"
+        android:hint="Mật khẩu cũ"
+        android:inputType="textPassword" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height.sapce.doimatkhau" />
+
+    <EditText
+        android:id="@+id/edtMatKhauMoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginright.edtMKcu.doimatkhau"
+        android:layout_marginRight="@dimen/marginright.edtMKcu.doimatkhau"
+        android:gravity="left"
+        android:hint="Mật khẩu mới"
+        android:inputType="textPassword" />
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height.sapce.doimatkhau" />
+
+    <EditText
+        android:id="@+id/edtXacNhanMatKhauMoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginright.edtMKcu.doimatkhau"
+        android:layout_marginRight="@dimen/marginright.edtMKcu.doimatkhau"
+        android:gravity="left"
+        android:hint="Xác nhận mật khẩu mới"
+        android:inputType="textPassword" />
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height.sapce.doimatkhau" />
+
+    <Button
+        android:id="@+id/btnXacNhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/marginright.btnxacnhan.doimatkhau"
+        android:background="@color/colorOrange"
+        android:paddingBottom="@dimen/padding.btnxacnhan.doimatkhau"
+        android:paddingLeft="@dimen/paddingleft_R.btnxacnhan.doimatkhau"
+        android:paddingRight="@dimen/paddingleft_R.btnxacnhan.doimatkhau"
+        android:paddingTop="@dimen/padding.btnxacnhan.doimatkhau"
+        android:text="Xác Nhận"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>

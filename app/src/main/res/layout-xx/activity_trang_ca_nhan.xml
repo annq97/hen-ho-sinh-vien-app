@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrangCaNhanActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height.rl.trangcanhan"
+        android:background="@drawable/bg_anhnen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height.ll.trangcanhan"
+            android:background="#66000000"
+            android:orientation="vertical"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/kich_thuoc_icon"
+            android:layout_height="@dimen/kich_thuoc_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/marginleft.imgback.trangcanhan"
+            android:layout_marginStart="@dimen/marginstart.imgback.trangcanhan"
+            android:layout_marginTop="@dimen/margintop.imgback.trangcanhan"
+            app:srcCompat="@drawable/icon_arrow_left" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAnhDaiDien"
+            android:layout_width="@dimen/width.imganhdaidien.trangcanhan"
+            android:layout_height="@dimen/height.imganhdaidien.trangcanhan"
+            android:layout_alignLeft="@+id/imgBack"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/imgBack"
+            android:layout_marginBottom="@dimen/marginbotom.img.trangcanhan"
+            android:layout_marginLeft="@dimen/marginleft.img.trangcanhan"
+            android:layout_marginStart="@dimen/marginstart.img.trangcanhan"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_add_default" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/imgLike"
+            android:layout_width="@dimen/w_h.imglike.trangcanhan"
+            android:layout_height="@dimen/w_h.imglike.trangcanhan"
+            android:layout_alignBottom="@+id/imgAnhDaiDien"
+            android:layout_toStartOf="@+id/tvUsername"
+            app:srcCompat="@drawable/ic_like" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgAnhDaiDien"
+            android:layout_marginBottom="@dimen/marginbottom.tvuername.trangcanhan"
+            android:layout_marginStart="@dimen/marginstart.tvusername.trangcanhan"
+            android:layout_toEndOf="@+id/imgAnhDaiDien"
+            android:text="SANT Team"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize.tvuername.trangcanhan"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:id="@+id/tlThongTinUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:stretchColumns="*">
+            <TableRow
+                android:id="@+id/tableRowKetBan"
+                android:visibility="gone">
+                <Button
+                    android:text="Kết Bạn"
+                    android:id="@+id/btnKetBan"
+                    android:layout_weight="10"
+                    android:layout_width="@dimen/width.btn.hight.trangcanhan"
+                    android:layout_height="@dimen/height.btn.trangcanhan" />
+                <Button
+                    android:text="Nhắn Tin"
+                    android:id="@+id/btnNhanTin"
+                    android:layout_weight="10"
+                    android:layout_width="@dimen/width.btnnhantin.trangcanhan"
+                    android:layout_height="@dimen/height.btn.trangcanhan" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowXacNhan"
+                android:visibility="gone">
+                <Button
+                    android:layout_margin="@dimen/margin.btn.trangcanhan"
+                    android:id="@+id/btnDongY"
+                    android:layout_width="@dimen/width.btnnhantin.trangcanhan"
+                    android:layout_height="@dimen/height.btn.trangcanhan"
+                    android:layout_weight="10"
+                    android:background="@color/colorGreen"
+                    android:text="Đồng Ý"
+                    android:textColor="@color/colorWhite" />
+                <Button
+                    android:layout_margin="@dimen/margin.btn.trangcanhan"
+                    android:id="@+id/btnTuChoi"
+                    android:layout_width="@dimen/width.btnnhantin.trangcanhan"
+                    android:layout_height="@dimen/height.btn.trangcanhan"
+                    android:layout_weight="10"
+                    android:background="@color/colorOrange"
+                    android:text="Từ Chối"
+                    android:textColor="@color/colorWhite" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="@dimen/do_rong_thuoc_tinh"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="@dimen/padding.tv.trangcanhan"
+                    android:scrollbarAlwaysDrawVerticalTrack="false"
+                    android:text="Giới tính:"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textsize.tv.trangcahan" />
+
+                <TextView
+                    android:id="@+id/tvGioiTinh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding.tv.trangcanhan"
+                    android:text="Nam"
+                    android:textSize="@dimen/textsize.tv.trangcahan" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Ngày sinh:"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textsize.tv.trangcahan" />
+
+                <TextView
+                    android:id="@+id/tvNgaySinh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding.tv.trangcanhan"
+                    android:text="01/01/1997"
+                    android:textSize="@dimen/textsize.tv.trangcahan" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding.tv.trangcanhan"
+                    android:textColor="@android:color/black"
+                    android:text="Trường:"
+                    android:textSize="@dimen/textsize.tv.trangcahan"
+                    />
+
+                <TextView
+                    android:id="@+id/tvTruong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:padding="@dimen/padding.tv.trangcanhan"
+                    android:text="Đại Học BKĐN"
+                    android:textSize="@dimen/textsize.tv.trangcahan" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding.tv.trangcanhan"
+                    android:text="Địa chỉ:"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textsize.tv.trangcahan" />
+
+                <TextView
+                    android:id="@+id/tvDiaChi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding.tv.trangcanhan"
+                    android:text="Đà Nẵng"
+                    android:textSize="@dimen/textsize.tv.trangcahan" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height.tbr.trangcanhan">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding.tv.trangcanhan"
+                    android:text="Sở thích:"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textsize.tv.trangcahan" />
+
+                <TextView
+                    android:id="@+id/tvSoThich"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding.tv.trangcanhan"
+                    android:text="Đá bóng\nGame\nĐá bóng\nGame\nĐá bóng\nGame"
+                    android:textSize="@dimen/textsize.tv.trangcahan" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+
+</LinearLayout>

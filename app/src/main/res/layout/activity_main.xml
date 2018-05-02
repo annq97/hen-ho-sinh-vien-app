@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layoutMain"
+    tools:context="com.santteam.apphenhosinhvien.MainActivity">
+    <LinearLayout
+
+        android:background="#EEEEEE"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toobarM"
+            android:background="@color/coloMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llHeaderManHinhChinh"
+                android:gravity="left"
+                android:weightSum="1">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgAnhDaiDien"
+                    android:layout_width="@dimen/width.anh.main"
+                    android:layout_height="@dimen/height.anh.main"
+                    android:layout_margin="@dimen/margin.anh.main"
+                    android:src="@drawable/img_add_default">
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvTen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sant Team ZoZo"
+                        android:textSize="@dimen/textsize.tvten.main"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_marginRight="@dimen/marginright.imgbtnmenu.main"
+                    android:id="@+id/imgBtnMenu"
+                    android:scaleType="center"
+                    android:layout_width="@dimen/width_h.imgbtn.main"
+                    android:layout_height="@dimen/width_h.imgbtn.main"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_menu_white_24dp" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imgBtnKetBan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/img_ketbanmanhinhchinh"
+                app:srcCompat="@drawable/img_ketbanmanhinhchinh" />
+
+            <ImageButton
+                android:id="@+id/imgBtnTimKiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/marginEnd.timkiem.main"
+                android:layout_marginRight="@dimen/marginRigh.timkiem.main"
+                android:background="@drawable/ic_circle"
+                app:srcCompat="@drawable/img_timkiemmanhinhchinh"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/imgBtnKetBan"
+                android:layout_alignEnd="@+id/imgBtnKetBan"
+                android:layout_marginTop="@dimen/marginTop.timkiem.main" />
+
+            <ImageButton
+                android:id="@+id/imgBtnDanhSach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_circle"
+                app:srcCompat="@drawable/img_danhsachsanhinhchinh"
+                android:layout_alignTop="@+id/imgBtnTinNhan"
+                android:layout_alignLeft="@+id/imgBtnTimKiem"
+                android:layout_alignStart="@+id/imgBtnTimKiem"
+                android:layout_marginLeft="@dimen/marginLeft.danhsach.main"
+                android:layout_marginStart="@dimen/marginStart.danhsach.main" />
+
+            <ImageButton
+                android:id="@+id/imgBtnTinNhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="@dimen/marginBottom.tinnhan.main"
+                android:layout_marginLeft="@dimen/marginLeft.tinnhan.main"
+                android:layout_marginStart="@dimen/marginStart.tinnhan.main"
+                android:background="@drawable/ic_circle"
+                app:srcCompat="@drawable/img_nhantinmanhinhchinh" />
+
+            <ImageButton
+                android:id="@+id/imgBtnYeuThich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imgBtnKetBan"
+                android:layout_alignEnd="@+id/imgBtnTinNhan"
+                android:layout_alignRight="@+id/imgBtnTinNhan"
+                android:background="@drawable/ic_circle"
+                app:srcCompat="@drawable/img_yeuthichmanhinhchinh" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        app:itemIconTint="@color/colorAccent"
+        app:headerLayout="@layout/activity_navi_header"
+        android:id="@+id/navigationMain"
+        android:layout_width="@dimen/width.navigation.main"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        app:menu="@menu/menu_drawer_main">
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

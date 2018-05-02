@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mnuCanhan"
+            android:icon="@drawable/ic_userdangki"
+            android:title="Cá Nhân" />
+        <item
+            android:icon="@drawable/ic_userdangki"
+            android:id="@+id/mnuSetting"
+            android:title="Thiết lập cá nhân" />
+        <item
+            android:icon="@drawable/ic_vpn_key_black_24dp"
+            android:id="@+id/mnuDoiMatKhau"
+            android:title="Đổi Mật Khẩu" />
+        <item
+            android:icon="@drawable/ic_dangxuat_drawermain"
+            android:id="@+id/mnuDangXuat"
+            android:title="Đăng Xuất" />
+    </group>
+
+    <item android:title="Hẹn hò sinh viên">
+    <menu>
+        <item
+            android:icon="@drawable/ic_infor_drawermain"
+            android:id="@+id/mnuInfomation"
+            android:title="Information" />
+        <item
+            android:icon="@drawable/ic_lienhe_drawermain"
+            android:id="@+id/mnuShare"
+            android:title="Chia sẻ cho mọi người" />
+        <item
+            android:id="@+id/mnuLienHe"
+            android:icon="@drawable/ic_lienhe_drawermain"
+            android:title="Liên hệ, ủng hộ" />
+    </menu>
+
+</item>
+</menu>

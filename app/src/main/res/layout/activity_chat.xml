@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:emojicon="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBarChat"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height.toolbarchat.chat"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/green"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lnKetNoi"
+            android:weightSum="41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/toolBarChat"
+            >
+            <TextView
+                android:id="@+id/tvKetNoi"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize.tvketnoi.chat"
+                android:gravity="center"
+                android:text="Bạn vừa nhận được lời mời kết nối từ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height.ll.chat">
+                <Button
+                    android:textColor="@color/white"
+                    android:background="@color/colorOrange"
+                    android:id="@+id/btnXacNhanKetNoi"
+                    android:text="Kết nối"
+                    android:layout_weight="20"
+                    android:layout_width="@dimen/width.btnxcnhanketnoi"
+                    android:layout_height="match_parent" />
+                <android.support.v4.widget.Space
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/width.btnxcnhanketnoi"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:textColor="@color/white"
+                    android:background="@color/colorGreen"
+                    android:id="@+id/btnTuChoiKetNoi"
+                    android:text="Từ chối"
+                    android:layout_weight="20"
+                    android:layout_width="@dimen/width.btnxcnhanketnoi"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvListChatMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lnChucNang"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lnKetNoi" />
+
+
+
+        <LinearLayout
+            android:visibility="visible"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:id="@+id/lnChucNang"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height.llchucnang.chat">
+
+            <ImageView
+                android:id="@+id/imgAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/padding.imgadd.chat"
+                android:paddingTop="@dimen/padding.imgadd.chat"
+                app:srcCompat="@drawable/ic_add" />
+
+            <ImageView
+                android:id="@+id/imgIconChat"
+                android:layout_width="@dimen/w_h.imgiconchat.chat"
+                android:layout_height="@dimen/w_h.imgiconchat.chat"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+
+                android:src="@drawable/ic_icon_chat"
+                />
+
+            <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+                android:id="@+id/edtNoiDung"
+                android:layout_width="@dimen/width.edtnoidung.chat"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="8"
+                android:background="@color/white"
+                android:layout_marginLeft="@dimen/marginleft.edtnoidung.chat"
+                android:hint="Nhập tin nhắn . . ."
+                android:imeOptions="actionSend"
+                android:textColor="@color/black"
+                emojicon:emojiconSize="50sp" />
+
+            <ImageView
+                android:id="@+id/imgSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/padding.imgsend.chat"
+                android:paddingTop="@dimen/padding.imgsend.chat"
+                app:srcCompat="@drawable/ic_send" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lnXacNhan"
+            android:weightSum="41"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height.llxacnhan.chat"
+            android:orientation="horizontal"
+            android:layout_below="@id/rvListChatMessage"
+            >
+            <Button
+                android:textColor="@color/white"
+                android:background="@color/colorOrange"
+                android:id="@+id/btnXacNhan"
+                android:text="Xác nhận"
+                android:layout_weight="20"
+                android:layout_width="@dimen/width.btnxacnhan.chat"
+                android:layout_height="match_parent" />
+            <android.support.v4.widget.Space
+                android:layout_weight="1"
+                android:layout_width="@dimen/width.space.chat"
+                android:layout_height="match_parent" />
+            <Button
+                android:textColor="@color/white"
+                android:background="@color/colorGreen"
+                android:id="@+id/btnTuChoi"
+                android:text="Từ chối"
+                android:layout_weight="20"
+                android:layout_width="@dimen/width.btnxacnhan.chat"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigationChat"
+        android:layout_width="@dimen/width.navigationview.chat"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        app:itemIconTint="@color/colorAccent"
+        app:menu="@menu/menu_drawer_chat">
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

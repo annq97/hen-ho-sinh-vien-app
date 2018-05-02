@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".TrangCaNhanActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height.rl.navi_header"
+        android:background="@drawable/bg_anhnen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height.ll.navi_header"
+            android:background="#66000000"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgAnhDaiDien"
+            android:layout_width="@dimen/w_h.imganhdaidien.navi_header"
+            android:layout_height="@dimen/w_h.imganhdaidien.navi_header"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/marginbotom.imganhdaidien.navi_header"
+            android:layout_marginStart="@dimen/marginstart.imganhdaidien.navi_header"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_logo" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize.tvusername.navi_header"
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/imgAnhDaiDien"
+            android:layout_marginBottom="@dimen/marginbottom.tvusername.navi_header"
+            android:text="Hẹn hò sinh viên" />
+    </RelativeLayout>
+</LinearLayout>

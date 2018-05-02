@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "883473332324",
+    "firebase_url": "https://apphenhosinhvien.firebaseio.com",
+    "project_id": "apphenhosinhvien",
+    "storage_bucket": "apphenhosinhvien.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883473332324:android:f73b19cb3cc1a534",
+        "android_client_info": {
+          "package_name": "com.santteam.apphenhosinhvien"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883473332324-v900trnsd6053p15tf8uca73jcipiah3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.santteam.apphenhosinhvien",
+            "certificate_hash": "e95516ea0a804bdfbcb5f9e8beb9665516b4c51e"
+          }
+        },
+        {
+          "client_id": "883473332324-oicbb5qsha23n5hvkjdj5nb1v3971amj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXTF_HJDa4af8PYdkctAE0rz6wdQfAErI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883473332324-oicbb5qsha23n5hvkjdj5nb1v3971amj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
